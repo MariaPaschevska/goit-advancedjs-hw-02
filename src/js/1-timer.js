@@ -1,15 +1,15 @@
-import flatpickr from "flatpickr";
-import "flatpickr/dist/flatpickr.min.css";
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const refs = {
-  input: document.querySelector("#datetime-picker"),
-  startBtn: document.querySelector("[data-start]"),
-  days: document.querySelector("[data-days]"),
-  hours: document.querySelector("[data-hours]"),
-  minutes: document.querySelector("[data-minutes]"),
-  seconds: document.querySelector("[data-seconds]"),
+  input: document.querySelector('#datetime-picker'),
+  startBtn: document.querySelector('[data-start]'),
+  days: document.querySelector('[data-days]'),
+  hours: document.querySelector('[data-hours]'),
+  minutes: document.querySelector('[data-minutes]'),
+  seconds: document.querySelector('[data-seconds]'),
 };
 
 let userSelectedDate = null;
@@ -29,8 +29,8 @@ const options = {
       userSelectedDate = null;
       refs.startBtn.disabled = true;
       iziToast.error({
-        message: "Please choose a date in the future",
-        position: "topRight",
+        message: 'Please choose a date in the future',
+        position: 'topRight',
       });
       return;
     }
@@ -42,7 +42,7 @@ const options = {
 
 flatpickr(refs.input, options);
 
-refs.startBtn.addEventListener("click", onStart);
+refs.startBtn.addEventListener('click', onStart);
 
 function onStart() {
   if (!userSelectedDate) return;
@@ -81,7 +81,7 @@ function updateTimerUI({ days, hours, minutes, seconds }) {
 }
 
 function addLeadingZero(value) {
-  return String(value).padStart(2, "0");
+  return String(value).padStart(2, '0');
 }
 
 function convertMs(ms) {

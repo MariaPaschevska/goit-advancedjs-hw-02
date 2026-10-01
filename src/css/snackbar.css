@@ -1,0 +1,66 @@
+.snackbar-container {
+  text-align: left;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 370px;
+  margin-top: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #2e2f42;
+}
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form input[type='number'] {
+  height: 54px;
+  padding: 0 12px;
+  font: inherit;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.form fieldset {
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 16px 32px 12px;
+  border: 2px groove #c0c0c0;
+}
+.form legend {
+  padding: 0 4px;
+}
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.form input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+.form button {
+  height: 32px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.form button:hover,
+.form button:focus {
+  background-color: #e5e5e5;
+}
+
+.iziToast {
+  min-width: 430px;
+  border-radius: 8px;
+}
+.iziToast::after {
+  box-shadow: none;
+}
