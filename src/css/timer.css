@@ -1,0 +1,36 @@
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+.timer-controls input,
+.timer-controls button {
+  padding: 8px 16px;
+  font: inherit;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+.timer-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.field .value {
+  font-size: 40px;
+  font-weight: 500;
+}
+.field .label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
